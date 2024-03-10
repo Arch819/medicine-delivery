@@ -1,0 +1,151 @@
+:root {
+  --border: 1px solid #000;
+  --border-radius: 10px;
+  --box-shadow: inset 1px 1px 10px 2px #eee;
+  --box-shadow-input-btn: inset 1px 1px 10px 2px #aaa
+}
+
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background: #0B44CD;
+  border: 4px solid #fff;
+}
+
+::-webkit-scrollbar-track {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+html,
+body,
+#root,
+main .container {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Manrope, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #121417;
+}
+
+#root {
+  display: grid;
+  grid-template-areas: "m m m"
+    "m m m"
+    "m m m"
+    "h h h ";
+  grid-template-rows: 1fr 1fr 1fr 60px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-areas: "h h h"
+      "m m m"
+      "m m m"
+      "m m m";
+    grid-template-rows: 60px 1fr 1fr 1fr;
+  }
+}
+
+header {
+  grid-area: h;
+}
+
+main {
+  grid-area: m;
+}
+
+
+
+
+code {
+  font-family: Manrope,
+    sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-family: inherit;
+}
+
+.btn {
+  border-color: transparent;
+  box-shadow: var(--box-shadow-input-btn);
+}
+
+.btn:is(:hover, :focus) {
+  background: #ccc;
+}
+
+input {
+  outline: none;
+  border-color: transparent;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-input-btn);
+}
+
+.btn-submit {
+  border: 1px solid transparent
+}
+
+.btn-submit:is(:hover, :focus):not(:disabled) {
+  border-color: #11aeff;
+  color: #11aeff;
+}
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 86px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 128px;
+  }
+}

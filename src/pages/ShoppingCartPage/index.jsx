@@ -52,6 +52,7 @@ function ShoppingCartPage() {
           }
           dispatch(clearCart());
           setUserInfo(USERINFO);
+          setDiscount(0);
           notiflixMessage("ok", "Thank you for your order");
         })
       )

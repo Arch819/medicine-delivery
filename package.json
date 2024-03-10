@@ -2,6 +2,7 @@
   "name": "medicine-delivery",
   "version": "1.0.0",
   "private": "true",
+  "homepage": "https://Arch819.github.io/medicine-delivery/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

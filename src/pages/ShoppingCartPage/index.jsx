@@ -10,7 +10,6 @@ import {
   OrderSubmitBoxStyle,
   OrderSubmitBtnStyle,
   ShoppingCartWrappStyle,
-  UseDiscountBoxStyle,
   UseDiscountFormStyle,
 } from "./ShoppingCartPage.stuled";
 import { useDispatch, useSelector } from "react-redux";

@@ -1,6 +1,6 @@
 # Medicine Delivery app
 
-Welcome to the Medicine Delivery app! This web application allows users to browse lists of medications, view information on drug prices, and sort lists by name, price, and store. Users can also add medications to their cart. On the Shopping Cart page, you can review added medications, select quantities, and view the total amount. After finalizing your medication choices, you need to fill out a form, enter a promo code for savings, and click the submit button.
+Welcome to the [Medicine Delivery app](arch819.github.io/medicine-delivery/)! This web application allows users to browse lists of medications, view information on drug prices, and sort lists by name, price, and store. Users can also add medications to their cart. On the Shopping Cart page, you can review added medications, select quantities, and view the total amount. After finalizing your medication choices, you need to fill out a form, enter a promo code for savings, and click the submit button.
 
 On the History page, you can access the history of your orders based on customer data or order ID. The Coupons page allows you to view available coupons and choose the desired one by clicking the "Copy" button. The promo code will be automatically copied, and all you need to do is paste it into the field during checkout.
 
@@ -18,28 +18,22 @@ To get started with the project, follow these commands in your terminal:
 1. Clone a repository:
 
 ```json
-npm i
-```
-
-2. Clone a repository:
-
-```json
 git clone https://github.com/Arch819/medicine-delivery.git
 ```
 
-3. Go to the project folder::
+2. Go to the project folder::
 
 ```json
 cd <project_folder_name>
 ```
 
-4. Install dependencies:
+3. Install dependencies:
 
 ```json
 npm i
 ```
 
-5. Start the development server:
+4. Start the development server:
 
 ```json
  npm start

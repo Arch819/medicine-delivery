@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
 import DrugStoresPage from "pages/DrugStoresPage";
 import ShoppingCartPage from "pages/ShoppingCartPage";
@@ -15,6 +15,7 @@ function App() {
         <Route path="/history" element={<HistoryPage />} />
         <Route path="/coupons" element={<CouponsPage />} />
       </Route>
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
 }

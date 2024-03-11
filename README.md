@@ -15,13 +15,31 @@ On the History page, you can access the history of your orders based on customer
 
 To get started with the project, follow these commands in your terminal:
 
-1. Install dependencies:
+1. Clone a repository:
 
 ```json
 npm i
 ```
 
-2. Start the development server:
+2. Clone a repository:
+
+```json
+git clone https://github.com/Arch819/medicine-delivery.git
+```
+
+3. Go to the project folder::
+
+```json
+cd <project_folder_name>
+```
+
+4. Install dependencies:
+
+```json
+npm i
+```
+
+5. Start the development server:
 
 ```json
  npm start

@@ -3,6 +3,13 @@ import styled from "styled-components";
 
 export const HeaderStyle = styled.header`
   padding: 4px 0;
+
+  @media screen and (max-width: 768px) {
+    & .container {
+      max-width: 100%;
+      padding: 0 5px;
+    }
+  }
 `;
 
 export const NavigationStyle = styled.nav`
